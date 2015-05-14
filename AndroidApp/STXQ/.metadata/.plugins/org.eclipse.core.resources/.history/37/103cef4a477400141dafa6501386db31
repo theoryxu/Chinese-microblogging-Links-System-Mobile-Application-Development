@@ -1,0 +1,31 @@
+package tool.network;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+public class EntityDisambiguationService implements Serializable{
+	private static String weibo;
+	private static List <String> entity;
+	
+	public String getWeibo() {
+		return weibo;
+	}
+
+	public void setWeibo(String weibo) {
+		this.weibo = weibo;
+	}
+
+	public List<String> getEntity() {
+		return entity;
+	}
+
+	public void setEntity(List<String> entity) {
+		this.entity = entity;
+	}
+
+	public EntityDisambiguationService(){
+		entity = new ArrayList<String>();
+	}
+	
+}

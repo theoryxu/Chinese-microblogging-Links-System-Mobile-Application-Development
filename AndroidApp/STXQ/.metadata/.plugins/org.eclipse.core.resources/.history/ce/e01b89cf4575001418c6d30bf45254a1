@@ -1,0 +1,47 @@
+package tool.network;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.http.client.methods.HttpGet;
+
+public class EntityDisambiguationService implements Serializable{
+	private static String weibos;
+	private static List <String> entitys;
+	
+	public  static String getWeibos() {
+		return weibos;
+	}
+
+	public static void setWeibos(String weibo) {
+		weibos = weibo;
+	}
+
+	public  static List<String> getEntitys() {
+		return entitys;
+	}
+
+	public static void setEntitys(List<String> entity) {
+		entitys = entity;
+	}
+
+	public EntityDisambiguationService(){
+		
+	}
+	
+	public static List<String> disambiguate(){
+		List<String> result = new ArrayList<String>();
+		String path = null;
+		
+		HttpGet httpGet = new HttpGet(path);
+		
+		
+		return result;
+	}
+	
+	public static String[] formDisambiguatedResult(List<String> list){
+		String[] result = null;
+		return result;
+	}
+}
